@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/Screenshot_2025-05-25_at_19.53.03-removebg-preview.png" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/1.1.0/font-awesome-animation.min.css" referrerpolicy="no-referrer" />
+    <title>play rock paper scissors</title>
+  </head>
+  <body>
+    <div>
+      <header>
+    
+        <h1><i class="fa-regular fa-copyright"></i></i> 2025 <u><a href="" target="_blank"> Carson Doughlas </a></u></h1>
+    <div class="score-container">
+        <p>Computer</p>
+        <p id="computerScore">0</p>
+        <p></p>
+        <p id="playerScore">0</p>
+        <p>Player</p>
+    </div>
+</header>
+      <div class="game-area">
+        <div class="computer-section">
+          <h3>Computer</h3>
+          <div class="choice-box" id="computerChoice"></div>
+        </div>
+        <div class="result" id="result">COMPUTER WINS</div>
+        <div class="player-section">
+          <h3>Player</h3>
+          <div class="choice-box" id="playerChoice"></div>
+          <div class="buttons">
+            <button onclick="playGame('rock')">
+              <!-- TODO:<img src="./images/rock-removebg-preview.png" alt="" class="emoji" /> Rock -->
+            <div class="emoji">✊</div>
+                    Rock
+            </button>
+            <button onclick="playGame('paper')">
+              <!-- TODO:<img src="./images/paper.jpg" alt="" class="emoji" /> Paper -->
+            <div class="emoji">✋</div>
+                    Paper
+            </button>
+            <button onclick="playGame('scissors')">
+              <!--<img src="./images/sacissors.jpg" alt="" class="emoji" /> Scissors-->
+              <div class="emoji">✌️</div>
+                    Scissors
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
