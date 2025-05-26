@@ -16,7 +16,7 @@ var choices = {
   scissors: "✌️",
 };
 
-// TODO:Computer makes random choice
+// TODO:Computer random choice
 function getComputerChoice() {
   var randomNumber = Math.floor(Math.random() * 3);
 
@@ -104,7 +104,7 @@ function showResult(winner) {
 
      // TODO:tried 50% first but 40% looks better
      // TODO:z-index 1000 puts it on top of everything
-    "background-color: yellow; color: black; display: block; position: fixed; top: 30%; left: 0; right: 0; width: 100%; padding: 20px; font-size: 24px; font-weight: bold; z-index: 1000; text-align: center; transform: translateY(-50%);"
+    "background-color: yellow; color: black; display: block; position: fixed; top: 40%; left: 0; right: 0; width: 100%; padding: 20px; font-size: 24px; font-weight: bold; z-index: 1000; text-align: center; transform: translateY(-50%);"
   );
   
   
