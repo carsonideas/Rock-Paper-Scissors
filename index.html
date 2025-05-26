@@ -14,7 +14,7 @@
       <header>
     
         <h1><i class="fa-regular fa-copyright"></i></i> 2025 <u><a href="" target="_blank"> Carson Doughlas </a></u></h1>
-    <div class="my-score-update">
+    <div class="score-container">
         <p>Computer</p>
         <p id="computerScore">0</p>
         <p></p>
@@ -22,34 +22,30 @@
         <p>Player</p>
     </div>
 </header>
-      <div class="my-game-area">
+      <div class="game-area">
         <div class="computer-section">
           <h3>Computer</h3>
           <div class="choice-box" id="computerChoice"></div>
         </div>
         <div class="result" id="result">COMPUTER WINS</div>
-        <div class="my-player-section">
+        <div class="player-section">
           <h3>Player</h3>
           <div class="choice-box" id="playerChoice"></div>
           <div class="buttons">
-            <button onclick="toPlayGame('rock')">
+            <button onclick="playGame('rock')">
               <!-- TODO:<img src="./images/rock-removebg-preview.png" alt="" class="emoji" /> Rock -->
-
             <div class="emoji">✊</div>
-            Rock
+                    Rock
             </button>
-            <button onclick="toPlayGame('paper')">
+            <button onclick="playGame('paper')">
               <!-- TODO:<img src="./images/paper.jpg" alt="" class="emoji" /> Paper -->
-
             <div class="emoji">✋</div>
-            
-            Paper
+                    Paper
             </button>
-            <button onclick="toPlayGame('scissors')">
+            <button onclick="playGame('scissors')">
               <!--<img src="./images/sacissors.jpg" alt="" class="emoji" /> Scissors-->
-
               <div class="emoji">✌️</div>
-              Scissors
+                    Scissors
             </button>
           </div>
         </div>
