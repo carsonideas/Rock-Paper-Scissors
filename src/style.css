@@ -131,6 +131,7 @@ button:hover {
 } 
 
 /* TODO: For my  responsive when i adjust */
+
 @media (max-width: 600px) {
   header {
     padding: 1.5rem;
