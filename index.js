@@ -22,7 +22,7 @@ function getComputerChoice() {
 
   // var randomNumber = Math.ceil(Math.random() * 3);
 
-  // Math.random gives me decimal so i tried Math.floor
+  // Math.random gives decimal so try Math.floor
 
   if (randomNumber === 0) {
     return "rock";
@@ -102,17 +102,16 @@ function showResult(winner) {
   resultBox.setAttribute(
     "style",
 
-     
+     // TODO:tried 50% first but 40% looks better
      // TODO:z-index 1000 puts it on top of everything
-     
-    "background-color: yellow; color: black; display: block; position: fixed; margin-top: -15vh; font-size: 24px; font-weight: bold; z-index: 1000000000000; text-align: center;"
+    "background-color: yellow; color: black; display: block; position: fixed; top: 40%; left: 0; right: 0; width: 100%; padding: 20px; font-size: 24px; font-weight: bold; z-index: 1000; text-align: center; transform: translateY(-50%);"
   );
   
   
 }
 
 // TODO:my game function
-function toPlayGame(playerChoice) {
+function playGame(playerChoice) {
 
   var computerChoice = getComputerChoice();
 
@@ -121,13 +120,13 @@ function toPlayGame(playerChoice) {
   playerChoiceBox.innerHTML = choices[playerChoice];
   playerChoiceBox.setAttribute(
     "style",
-    "align-items: center; justify-content: center; font-size: 90px; padding-top: 4px;"
+    "display: flex; align-items: center; justify-content: center; font-size: 60px;"
   );
 
   computerChoiceBox.innerHTML = choices[computerChoice];
   computerChoiceBox.setAttribute(
     "style",
-    "align-items: center; justify-content: center; font-size: 90px; padding-top: 4px;"
+    "display: flex; align-items: center; justify-content: center; font-size: 60px;"
   );
 var winner = checkWinner(playerChoice, computerChoice);
 updateScores(winner);
