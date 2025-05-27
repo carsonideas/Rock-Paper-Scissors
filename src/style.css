@@ -161,3 +161,25 @@ button:hover {
     padding: 1.5rem;
   }
 }
+
+.resultBox
+{
+  background-color: yellow; color: black; display: block; ; top: 40%; left: 0; right: 0; width: 100%; padding: 20px; font-size: 24px; font-weight: bold; z-index: 1000; text-align: center; transform: translateY(-50%);
+  
+}
+
+.computerChoiceBox
+{
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 60px;
+}
+.playerChoiceBox
+
+{
+display: flex; 
+align-items: center; 
+justify-content: center; 
+font-size: 60px;
+}

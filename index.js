@@ -85,58 +85,31 @@ function updateScores(winner) {
 
 // TODO:Show result message
 
-
 function showResult(winner) {
   if (winner === "player") {
     resultBox.innerHTML = "PLAYER WINS";
-    
   } else if (winner === "computer") {
     resultBox.innerHTML = "COMPUTER WINS";
-   
   } else {
     resultBox.innerHTML = "DRAW";
-   
   }
 
-  
-  resultBox.setAttribute(
-    "style",
-
-     // TODO:tried 50% first but 40% looks better
-     // TODO:z-index 1000 puts it on top of everything
-
-     // TODO: i used here "style" to see the use of inline execution inside javascript
-    //  . i would have otherwise used innerHTML IN function showResult(winner). I DONT WANT THE EASY WAY OUT
-
-
-    "background-color: yellow; color: black; display: block; position: fixed; top: 40%; left: 0; right: 0; width: 100%; padding: 20px; font-size: 24px; font-weight: bold; z-index: 1000; text-align: center; transform: translateY(-50%);"
-  );
-  
-  
+  resultBox.classList.add("resultBox");
 }
 
 // TODO:my game function
 function playGame(playerChoice) {
-
   var computerChoice = getComputerChoice();
 
   // TODO:Show choices on screen with display flex
   // TODO:having trouble getting my emojis to show up. try again
   playerChoiceBox.innerHTML = choices[playerChoice];
-  playerChoiceBox.setAttribute(
-
-    
-    "style",
-    "display: flex; align-items: center; justify-content: center; font-size: 60px;"
-  );
+  playerChoiceBox.classList.add("playerChoiceBox");
 
   computerChoiceBox.innerHTML = choices[computerChoice];
-  computerChoiceBox.setAttribute(
-    "style",
-    "display: flex; align-items: center; justify-content: center; font-size: 60px;"
-  );
-var winner = checkWinner(playerChoice, computerChoice);
-updateScores(winner);
-showResult(winner);
-  
+  computerChoiceBox.classList.add("computerChoiceBox");
+
+  var winner = checkWinner(playerChoice, computerChoice);
+  updateScores(winner);
+  showResult(winner);
 }
